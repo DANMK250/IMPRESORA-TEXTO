@@ -12,7 +12,7 @@ app.post('/print', (req, res) => {
         return res.status(400).json({ message: 'No hay texto para imprimir.' });
     }
 
-    const printerName = '10.50.10.252'; // Cambia esto por el nombre de tu impresora
+    const printerName = 'Epson L3250'; // Cambia esto por el nombre de tu impresora
 
     printer.printDirect({
         data: text,
